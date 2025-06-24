@@ -19,3 +19,7 @@ test('Reverse "Hello World" to equal "dlroW olleH"', () => {
 test("Returns empty string unchanged", () => {
   expect(reverseString("")).toBe("");
 });
+
+test("Reverse string with punctuation", () => {
+  expect(reverseString("hello!")).toBe("!olleh");
+});
