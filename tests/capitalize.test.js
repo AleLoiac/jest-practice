@@ -11,3 +11,11 @@ test('Capitalize "b" to equal "B"', () => {
 test('Capitalize "string" to equal "String"', () => {
   expect(capitalize("string")).toBe("String");
 });
+
+test('Capitalize "javaScript" to equal "JavaScript"', () => {
+  expect(capitalize("javaScript")).toBe("JavaScript");
+});
+
+test("Returns empty string unchanged", () => {
+  expect(capitalize("")).toBe("");
+});
